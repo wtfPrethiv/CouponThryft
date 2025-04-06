@@ -70,23 +70,46 @@
 
 // export default TradingCard;
 
-import React from 'react';
-import '../Pages/TradingPage.css'; // This ensures .product-card styles apply
+// import React from 'react';
+// import '../Pages/TradingPage.css'; // This ensures .product-card styles apply
 
-const TradingCard = ({ product }) => {
-  const handleTrade = () => {
-    alert(`You clicked Trade on: ${product.brand}`);
-    // Future: add API call here to record trade and notify the other user
-  };
+// const TradingCard = ({ product }) => {
+//   const handleTrade = () => {
+//     alert(`You clicked Trade on: ${product.brand}`);
+//     // Future: add API call here to record trade and notify the other user
+//   };
 
-  return (
-    <div className="product-card">
-      <img src={product.image} alt={product.brand} />
-      <h3>{product.brand}</h3>
-      <p>{product.description}</p>
-      <button onClick={handleTrade}>Trade</button>
-    </div>
-  );
+//   return (
+//     <div className="product-card">
+//       <img src={product.image} alt={product.brand} />
+//       <h3>{product.brand}</h3>
+//       <p>{product.description}</p>
+//       <button onClick={handleTrade}>Trade</button>
+//     </div>
+//   );
+// };
+
+// export default TradingCard;
+
+const handleTrade = async () => {
+  try {
+    const response = await fetch('/api/trade-request', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        fromUser: 'user1',       // You can replace this with logged-in user
+        toUser: 'user2',         // Or select a user based on context
+        productId: product.id,   // ID of coupon being traded
+      }),
+    });
+
+    const data = await response.json();
+    alert(data.message);
+  } catch (error) {
+    console.error('Trade request failed:', error);
+    alert('Something went wrong while sending the trade request.');
+  }
 };
 
-export default TradingCard;
