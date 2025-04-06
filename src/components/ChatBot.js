@@ -12,7 +12,7 @@ const ChatBot = () => {
     setMessages([...messages, userMessage]);
 
     // Simulate bot response
-    const botMessage = { sender: 'bot', text: 'Hello! How can I help you?' };
+    const botMessage = { sender: 'bot', text: 'Hello! How can I help you?, sorry for the inconvenience !!! chat bot is still under construction' };
     setMessages((prev) => [...prev, botMessage]);
 
     setInput('');
