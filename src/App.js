@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
@@ -15,19 +15,24 @@ import Cart from './Pages/Cart';
 import { AuthProvider } from './context/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
 import TradingPage from './Pages/TradingPage';
-import CategoryPage from './Pages/CategoryPage';  
+import CategoryPage from './Pages/CategoryPage';
 import { CartProvider } from './context/CartContext';
 import { CouponProvider } from './context/CouponContext';
-import axios from "axios";
 import ItemsPage from './Pages/ItemsPage';
+import ChatBot from './components/ChatBot'; // Import ChatBot component
 
 function App() {
-  const [sidebarOpen, setSidebarOpen] = React.useState(false);
-  
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [chatBotOpen, setChatBotOpen] = useState(false); // State to toggle chatbot
+
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
   };
-  
+
+  const toggleChatBot = () => {
+    setChatBotOpen(!chatBotOpen);
+  };
+
   return (
     <AuthProvider>
       <CouponProvider>
@@ -44,17 +49,28 @@ function App() {
                   <Route path="/transactions" element={<Transactions />} />
                   <Route path="/Trade" element={<TradingPage />} />
                   <Route path="/items" element={<ItemsPage />} />
-                  <Route path="/profile" element={
-                    <ProtectedRoute>
-                      <Profile />
-                    </ProtectedRoute>
-                  } />
+                  <Route
+                    path="/profile"
+                    element={
+                      <ProtectedRoute>
+                        <Profile />
+                      </ProtectedRoute>
+                    }
+                  />
                   <Route path="/categories/:slug" element={<CategoryPage />} />
                   <Route path="/auth" element={<SignUpLogin />} />
                   <Route path="/product/:id" element={<ProductDetail />} />
                   <Route path="/cart" element={<Cart />} />
                 </Routes>
               </main>
+
+              {/* Chatbot Button */}
+              <div className="chatbot-button" onClick={toggleChatBot}>
+                💬
+              </div>
+
+              {/* Chatbot Component */}
+              {chatBotOpen && <ChatBot />}
             </div>
           </Router>
         </CartProvider>
