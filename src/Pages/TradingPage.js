@@ -66,7 +66,7 @@ const TradingCard = ({ product }) => {
 
   return (
     <div className="trading-card">
-      <img src={product.image} alt={product.brand} className="trading-card-img" />
+      <img src={product.image} alt={product.brand} />
       <h3>{product.brand}</h3>
       <p>{product.description}</p>
       <button onClick={handleTrade}>Trade</button>
@@ -74,5 +74,4 @@ const TradingCard = ({ product }) => {
   );
 };
 
-export default TradingCard;
 
