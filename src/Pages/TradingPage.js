@@ -26,17 +26,47 @@
 // export default TradingPage;
 
 // TradingCard.js
+
+
+
+// import React from 'react';
+
+// import TradingCard from '../components/TradingCard';
+
+// const TradingCard = ({ product }) => {
+//   const handleTrade = () => {
+//     alert(`Trading coupon from ${product.brand}`);
+//     // Here, you would send the trade request
+//   };
+
+//   return (
+//     <div className="trading-card">
+//       <img src={product.image} alt={product.brand} />
+//       <h3>{product.brand}</h3>
+//       <p>{product.description}</p>
+//       <button onClick={handleTrade}>Trade</button>
+//     </div>
+//   );
+// };
+
+// export default TradingCard;
+
+
+
 import React from 'react';
+// import './TradingCard.css'; // optional if you have styles
+
+import TradingCard from '../components/TradingCard';
 
 const TradingCard = ({ product }) => {
   const handleTrade = () => {
-    alert(`Trading coupon from ${product.brand}`);
-    // Here, you would send the trade request
+    alert(`You clicked Trade on: ${product.brand}`);
+    // This is where you'd send the backend request in future
   };
 
   return (
     <div className="trading-card">
-      <img src={product.image} alt={product.brand} />
+      <img src={product.image} alt={product.brand} className="trading-card-img" />
       <h3>{product.brand}</h3>
       <p>{product.description}</p>
       <button onClick={handleTrade}>Trade</button>
@@ -45,3 +75,4 @@ const TradingCard = ({ product }) => {
 };
 
 export default TradingCard;
+
