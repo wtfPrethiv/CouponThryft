@@ -18,6 +18,8 @@ import TradingPage from './Pages/TradingPage';
 import CategoryPage from './Pages/CategoryPage';  
 import { CartProvider } from './context/CartContext';
 import { CouponProvider } from './context/CouponContext';
+import axios from "axios";
+import ItemsPage from './Pages/ItemsPage';
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = React.useState(false);
@@ -41,6 +43,7 @@ function App() {
                   <Route path="/categories" element={<Categories />} />
                   <Route path="/transactions" element={<Transactions />} />
                   <Route path="/Trade" element={<TradingPage />} />
+                  <Route path="/items" element={<ItemsPage />} />
                   <Route path="/profile" element={
                     <ProtectedRoute>
                       <Profile />
