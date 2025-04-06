@@ -1,0 +1,60 @@
+.transactions-page {
+    padding: 20px 0;
+  }
+  
+  .transactions-container {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+  }
+  
+  .transactions-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .transaction-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  
+  .transaction-item:last-child {
+    border-bottom: none;
+  }
+  
+  .transaction-date {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .transaction-amount {
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  
+  .transaction-status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  
+  .transaction-status.completed {
+    background: rgba(46, 204, 113, 0.2);
+    color: #27ae60;
+  }
+  
+  .transaction-status.processing {
+    background: rgba(52, 152, 219, 0.2);
+    color: #2980b9;
+  }
+  
+  .transaction-status.failed {
+    background: rgba(231, 76, 60, 0.2);
+    color: #c0392b;
+  }
+  

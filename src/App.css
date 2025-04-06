@@ -1,0 +1,46 @@
+.section-title {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+  color: #ffff;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 60%;
+  height: 3px;
+  background: #333;
+  border-radius: 5px;
+}
+
+.section {
+  margin: 3rem 0;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn {
+  border: none;
+  background: #333;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #555;
+  transform: translateY(-2px);
+}

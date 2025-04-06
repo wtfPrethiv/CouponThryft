@@ -1,0 +1,49 @@
+.hero-section {
+    background: linear-gradient(to right, #1886e7, #f5eef7);
+    border-radius: 10px;
+    padding: 60px 20px;
+    margin-bottom: 3rem;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(5px);
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+  }
+  
+  .shop-now-btn {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  
+  .shop-now-btn:hover {
+    background: #555;
+    transform: translateY(-3px);
+  }
+  
+  .featured-section, .flash-sale-section {
+    padding: 20px 0;
+  }
+  
+  .empty-state {
+    text-align: center;
+    padding: 40px 0;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+  }

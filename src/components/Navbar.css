@@ -1,0 +1,147 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(to bottom, 
+    rgba(245, 245, 245, 0.235), 
+    rgba(220, 220, 220, 0.918)
+  );
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 100;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative; /* Keep this */
+}
+
+/* Left section - Logo */
+.navbar-logo {
+  position: fixed;
+  left: 40px;
+  top: 12px;
+}
+
+.logo {
+  height: 45px;
+  width: auto;
+}
+
+.logo-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+}
+
+/* Middle section - Search */
+.search-container {
+  position: fixed;
+  left: 43%; /* Changed from 50% to move it right */
+  top: -5px; /* Changed from 15px to move it up */
+  transform: translateX(-50%);
+  width: 400px;
+  z-index: 101; /* Add this to ensure search appears above other elements */
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  height: 40px;
+  padding: 8px 16px;
+  padding-right: 40px; /* Make space for the icon */
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  font-size: 14px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  outline: none;
+}
+
+.search-input:focus {
+  background: rgba(255, 255, 255, 0.95); /* More opaque when focused */
+  border-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add this new style for search icon */
+.search-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 18px;
+  pointer-events: none;
+}
+
+/* Right section - Icons */
+.navbar-icons {
+  position: fixed;
+  right: 40px;
+  top: 22px;
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 1.3rem;
+  color: rgba(0, 0, 0, 0.7); /* Adjusted for transparency */
+}
+
+/* Only add these minimal media queries */
+@media screen and (max-width: 768px) {
+  .search-container {
+    display: none;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    height: 60px;
+  }
+  
+  .navbar-logo {
+    left: 20px;
+    top: 10px;
+  }
+  
+  .navbar-icons {
+    right: 20px;
+    top: 18px;
+    gap: 15px;
+  }
+  
+  .logo {
+    height: 35px;
+  }
+}
+
+/* Add these new styles for search container */
+@media screen and (max-width: 1200px) {
+  .search-container {
+    left: 58%;
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .search-container {
+    left: 60%;
+    width: 300px;
+  }
+}

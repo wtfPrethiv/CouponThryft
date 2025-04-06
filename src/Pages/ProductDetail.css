@@ -1,0 +1,114 @@
+.product-detail-page {
+    padding: 20px 0;
+  }
+  
+  .product-detail-container {
+    display: flex;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+  }
+  
+  .product-detail-left {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .product-detail-right {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-detail-image-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+  }
+  
+  .product-detail-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .product-detail-name {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .product-detail-price {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .product-detail-description {
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .product-detail-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: auto;
+  }
+  
+  .detail-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .add-to-cart-btn {
+    background: #333;
+    color: white;
+    flex: 2;
+  }
+  
+  .add-to-cart-btn:hover {
+    background: #555;
+  }
+  
+  .wishlist-btn {
+    background: rgba(0, 0, 0, 0.05);
+    color: #333;
+    flex: 1;
+  }
+  
+  .wishlist-btn:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-icon {
+    margin-right: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .product-detail-container {
+      flex-direction: column;
+    }
+    
+    .product-detail-image-container {
+      height: 300px;
+    }
+    
+    .product-detail-actions {
+      flex-direction: column;
+    }
+  }
