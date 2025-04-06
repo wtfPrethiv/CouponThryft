@@ -17,4 +17,7 @@ app.get("/api/items", async (req, res) => {
     }
   });
 
+  app.use('/api', require('./routes/trade'));
+
+
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
