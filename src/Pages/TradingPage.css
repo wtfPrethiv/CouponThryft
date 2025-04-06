@@ -69,5 +69,10 @@ background: linear-gradient(90deg, rgba(246,175,220,1) 0%, rgba(184,181,184,1) 0
     background: linear-gradient(90deg, rgba(246,175,220,1) 0%, rgba(22,21,22,1) 0%, rgba(184,181,184,1) 100%, rgba(3,4,4,1) 100%, rgba(255,255,255,1) 100%);
     color: #fff; /* Optional: override text color */
   }
+  .trade-btn:hover{
+    background: rgb(246,175,220);
+    background: linear-gradient(90deg, rgba(246,175,220,1) 0%, rgba(22,21,22,1) 0%, rgba(184,181,184,1) 100%, rgba(3,4,4,1) 100%, rgba(255,255,255,1) 100%);
+    color: #fff; /* Optional: override text color */
+  }
   
   
