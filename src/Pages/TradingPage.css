@@ -1,4 +1,4 @@
-.product-card {
+/* .product-card {
   background: linear-gradient(to bottom, 
   rgba(245, 245, 245, 0.354), 
   rgba(220, 220, 220, 0.918)
@@ -31,5 +31,22 @@
   .product-card p {
     color: #6b7280;
     font-size: 0.9rem;
+  }
+   */
+
+   .product-card button {
+    margin-top: 0.75rem;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .product-card button:hover {
+    background-color: #4338ca;
   }
   
