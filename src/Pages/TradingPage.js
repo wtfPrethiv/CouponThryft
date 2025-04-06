@@ -4,9 +4,11 @@ import { products } from '../data/product';
 import './TradingPage.css';
 
 const TradingPage = () => {
+  <TradingCard key={product.id} product={product} />
   const tradeProducts = products.filter(product => product.trade);
 
   return (
+    
     <div className="trading-page">
       <section className="hero-section">
         <div className='hero-content'>

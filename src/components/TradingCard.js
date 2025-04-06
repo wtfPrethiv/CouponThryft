@@ -91,25 +91,39 @@
 
 // export default TradingCard;
 
-const handleTrade = async () => {
-  try {
-    const response = await fetch('/api/trade-request', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        fromUser: 'user1',       // You can replace this with logged-in user
-        toUser: 'user2',         // Or select a user based on context
-        productId: product.id,   // ID of coupon being traded
-      }),
-    });
+const TradingCard = ({ product }) => {
+  // now product is defined!
+  const handleTrade = async () => {
+    try {
+      const response = await fetch('/api/trade-request', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          fromUser: 'user1',
+          toUser: 'user2',
+          productId: product.id,
+        }),
+      });
 
-    const data = await response.json();
-    alert(data.message);
-  } catch (error) {
-    console.error('Trade request failed:', error);
-    alert('Something went wrong while sending the trade request.');
-  }
+      const data = await response.json();
+      alert(data.message);
+    } catch (error) {
+      console.error('Trade request failed:', error);
+      alert('Something went wrong while sending the trade request.');
+    }
+  };
+
+  return (
+    <div className="product-card">
+      <img src={product.image} alt={product.brand} />
+      <h3>{product.brand}</h3>
+      <p>{product.description}</p>
+      <button onClick={handleTrade}>Trade</button>
+    </div>
+  );
 };
+
+export default TradingCard;
 
