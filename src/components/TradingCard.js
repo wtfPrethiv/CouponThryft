@@ -84,7 +84,7 @@ const TradingCard = ({ product }) => {
       <img src={product.image} alt={product.brand} />
       <h3>{product.brand}</h3>
       <p>{product.description}</p>
-      <button onClick={handleTrade}>Trade</button>
+      <button  onClick={handleTrade} className="trade-button" >Trade</button>
     </div>
   );
 };

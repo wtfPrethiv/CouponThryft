@@ -7,6 +7,7 @@ const TradingPage = () => {
   const tradeProducts = products.filter(product => product.trade);
 
   return (
+    
     <div className="trading-page">
       <section className="hero-section">
         <div className='hero-content'>

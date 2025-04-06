@@ -33,3 +33,21 @@
     font-size: 0.9rem;
   }
   
+  .trade-button {
+    background: linear-gradient(to right, #4ade80, #22c55e); /* nice green gradient */
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .trade-button:hover {
+    background: linear-gradient(to right, #22c55e, #16a34a);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
