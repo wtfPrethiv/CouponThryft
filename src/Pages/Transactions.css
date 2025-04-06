@@ -58,3 +58,36 @@
     color: #c0392b;
   }
   
+  /* Dropdown container */
+  .status-dropdown {
+    margin-top: 10px;
+  }
+  
+  /* Dropdown button */
+  .status-button {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Default option (Report Working) */
+  .status-button.report {
+    background-color: #f8f9fa; /* Light gray/white */
+    color: black;
+  }
+  
+  /* Green background for "Working" */
+  .status-button.working {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  /* Red background for "Not Working" */
+  .status-button.not-working {
+    background-color: #dc3545;
+    color: white;
+  }
