@@ -23,21 +23,21 @@ It’s all about turning wasted discounts into real value.
 
 ## 🚀 Features
 
-- 🛍️ Post your coupons for sale/trade
-- 🔎 Browse available deals from other users
-- 💬 Contact sellers (chat feature in progress)
-- 🔐 User login & profile (coming soon)
-- ⚡ Fast, responsive UI built with **React.js**
+- 🔐 User Authentication (JWT + bcrypt) {not yet implemented, coming soon !! }
+- 🛍️ Post and manage your own coupons
+- 🔎 Browse/search coupons by type, category, or platform
+- 📬 Contact sellers (chat feature coming soon)
+- 📈 Dashboard to view and manage your activity
+- ⚡ Smooth frontend with React.js
 
 ---
 
 ## 🧠 Tech Stack
 
-- **Frontend**: React.js
-- **Styling**: Tailwind CSS *(or your choice)*
-- **Backend**: Coming soon (Flask, Node.js, etc.)
-- **Database**: TBD
-- **Auth**: Google Login (planned)
+- **Frontend**: React.js, Tailwind CSS
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB + Mongoose
+- **Authentication**: JWT, bcrypt
 
 ---
 
@@ -65,3 +65,4 @@ npm run dev
 ```bash
 npm start
 ```
+# This site will go live soon ...
