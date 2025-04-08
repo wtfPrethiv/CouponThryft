@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# 🏷️ CouponThryft
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**CouponThryft** is a platform built for one purpose — **coupon trading**. Whether you're looking to **buy** a discount code or **sell** one you won’t use, this app makes it simple, fast, and secure.
 
-## Available Scripts
+> *“The coupon you might not need could be exactly what someone else is looking for.”*
 
-In the project directory, you can run:
+Think of it as the marketplace for all those unused offers, promo codes, and discount deals sitting in your inbox. Let them go to someone who needs them — and maybe grab one in return.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🔥 Core Idea
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+People often have valid coupons they never use — and others are searching for that exact deal. **CouponThryft bridges that gap**, creating a **coupon economy** where users can:
 
-### `npm test`
+- 🔁 **Trade** or exchange deals with the community
+- 💸 **Sell** unused coupons
+- 🛒 **Buy** coupons from others
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+It’s all about turning wasted discounts into real value.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 🛍️ Post your coupons for sale/trade
+- 🔎 Browse available deals from other users
+- 💬 Contact sellers (chat feature in progress)
+- 🔐 User login & profile (coming soon)
+- ⚡ Fast, responsive UI built with **React.js**
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🧠 Tech Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Frontend**: React.js
+- **Styling**: Tailwind CSS *(or your choice)*
+- **Backend**: Coming soon (Flask, Node.js, etc.)
+- **Database**: TBD
+- **Auth**: Google Login (planned)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🛠️ Installation & Setup
 
-## Learn More
+To run the project locally:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# 1. Clone the repo
+```bash
+git clone https://github.com/yourusername/couponthryft.git
+cd couponthryft
+```
 
-### Code Splitting
+# 2. Install dependencies
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# 3. Start the development server
+```bash
+npm run dev
+```
+# or if using CRA
+```bash
+npm start
+```
